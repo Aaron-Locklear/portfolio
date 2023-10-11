@@ -1,0 +1,45 @@
+
+.about-section{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  overflow-y: scroll;
+  max-width: 100%;
+}
+
+.about-section > div{
+  grid-column: 2/3;
+  display: flex;
+}
+
+.background > img{
+  flex:1;
+  max-width: 100px;
+  align-self: center;
+  justify-self: center;
+  margin:10px;
+}
+
+.background-text{
+  flex:3;
+  align-self: center;
+  justify-self: center;
+}
+
+.about-section h1{
+  text-align: center;
+  width:100%
+}
+
+@media (max-width:500px){
+  .about-section{
+    grid-template-columns: 1fr;
+  }
+
+  .about-section > div{
+    grid-column: 1/2;
+  }
+
+  .background-text{
+    margin: 10px;
+  }
+}

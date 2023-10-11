@@ -1,0 +1,26 @@
+a.transform{
+  color: #2a3d45;
+  padding:.5em;
+  border-radius: 5px;
+  border: solid #2a3d45 2px;
+  background-color: #faf3e0;
+  font-weight: 800;
+  font-size: 1rem;
+  box-shadow: 5px 5px 0px 0px #ff9a76;
+  user-select: none;
+  flex:0 1 1;
+}
+
+.button-container{
+  display: flex;
+  margin:10px;
+  justify-content: center;
+}
+
+a.transform:hover{
+  box-shadow: 5px 5px 0px 0px #2a3d45;
+  background-color: #ff9a76;
+  border: solid #ff9a76 2px;
+  color:#faf3e0;
+  cursor: pointer;
+}

@@ -1,2 +1,1 @@
-# portfolio
-Port - Folio
+Note for the author remember to add the font Baskerville anad Spectral fonts

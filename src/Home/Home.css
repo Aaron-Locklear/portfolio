@@ -1,0 +1,25 @@
+section{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  grid-column: 2/3;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;   
+}
+
+.container > p{
+  justify-content: center;
+}
+
+.name{
+  color:#9658a1;
+}

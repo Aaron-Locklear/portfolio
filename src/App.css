@@ -1,0 +1,14 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+#root{
+  width:100vw;
+  height:100vh;
+  background-color: #faf3e0;
+  color:#2a3d45;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}

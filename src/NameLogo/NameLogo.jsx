@@ -26,9 +26,9 @@ export default function NameLogo({ firstInitial, firstName, lastName, lastInitia
     <p className="full-name"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseExit}>
-      <span className="first-name">{currentFirstNameText}</span>
-      {isHovered ? "\u00A0" : ""}
-      <span className="last-name">{currentLastNameText}</span>
+      <span className="first-name">{window.innerWidth > 680 ? currentFirstNameText : firstInitial}</span>
+      {isHovered && window.innerWidth > 680 ? "\u00A0" : ""}
+      <span className="last-name">{window.innerWidth > 680 ? currentLastNameText : lastInitial}</span>
       .
     </p>
   );

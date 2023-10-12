@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import "./LinkButton.css"
 
 export default function LinkButton({linkText, linkPath}){
-  return (<a href={linkPath} className="link-button-link">{linkText}</a>);
+  return (<Link to={linkPath} className="link-button-link">{linkText}</Link>);
 }

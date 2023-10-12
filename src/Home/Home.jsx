@@ -1,6 +1,6 @@
 import Header from "../Header/Header";
-import TransformLink from "../TransformLink/TransformLink";
 import useTypingEffect from "../typing-effect";
+import LinkButton from "../LinkButton/LinkButton"
 import "./Home.css"
 
 export default function Home(){
@@ -10,7 +10,7 @@ export default function Home(){
     <div className="container">
       <p>Hello, I'm <span className="name">{typedName}</span></p>
       <p>I'm a front-end developer</p>
-      <TransformLink>Find out more about me</TransformLink>
+      <LinkButton linkText={"Find out more about me!"} linkPath={"/About"}/>
     </div>
   </section>
 }

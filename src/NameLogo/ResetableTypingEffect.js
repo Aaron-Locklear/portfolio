@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
+//this code runs on mount so the first time you hover over the logo it appears all
+//at once but every other time it works normally
 export default function useTypingEffect(textToType, interKeyStrokeDurationInMs, shouldReset){
   const [currentPosition, setCurrentPosition] = useState(0);
   

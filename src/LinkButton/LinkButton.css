@@ -1,0 +1,32 @@
+a.link-button-link{
+  color: var(--text-color, #2a3d45);
+  background-color: var(--background-color, #faf3e0);
+  
+  padding:.5rem;
+  margin:.5rem;
+
+  box-shadow: 5px 5px 0px 0px var(--important-color, #ff9a76);
+  border-radius: 5px;
+  border: solid var(--text-color, #2a3d45) 2px;
+
+  font-weight: 800;
+  font-size: 1rem;
+
+  user-select: none;
+  text-decoration: none;
+
+  display: inline-block;
+
+  flex:0;
+}
+
+a.link-button-link:hover{
+  box-shadow: 5px 5px 0px 0px var(--text-color, #2a3d45);
+
+  background-color: var(--important-color, #ff9a76);
+  color:var(--background-color, #faf3e0);
+
+  border: solid var(--important-color, #ff9a76) 2px;
+
+  cursor: pointer;
+}

@@ -17,7 +17,7 @@ section{
 }
 
 .container > p{
-  justify-content: center;
+  text-align: center;
 }
 
 .name{

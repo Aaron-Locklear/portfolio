@@ -1,0 +1,13 @@
+.full-name {
+  grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+  font-weight: 800;
+  font-size: 2em;
+  user-select: none;
+}
+
+
+.full-name:hover{
+  color:#9658a1;
+}

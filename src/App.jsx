@@ -1,13 +1,18 @@
-import { useState } from 'react';
 import './App.css';
 import About from './About/About';
-import {Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Home from './Home/Home';
 import Projects from './Projects/Projects';
 import Header from './Header/Header';
+import { useEffect } from 'react';
 
 function App() {
-  const [curPageName, setCurPageName] = useState("Home");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Redirect to '/Home' when the app starts
+    navigate('/Home');
+  }, []);
 
   return (
     <>

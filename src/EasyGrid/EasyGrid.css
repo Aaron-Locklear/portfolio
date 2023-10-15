@@ -1,0 +1,4 @@
+.grid-container { /*inputs : spacing, minWidth, maxWidth*/
+  display: grid;
+  margin:0px;
+}

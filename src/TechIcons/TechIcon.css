@@ -1,0 +1,7 @@
+.grid-item { /* inputs : label, altText, imgSource*/
+  text-align: center;
+  font-size:.75rem;
+  display:flex;
+  flex-direction:column;
+  width:70px;
+}

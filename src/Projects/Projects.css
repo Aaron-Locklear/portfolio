@@ -1,0 +1,11 @@
+.project-section{
+  width:100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  overflow-y: scroll;
+}
+
+.project-section > div {
+  grid-column: 2 / 3;
+}

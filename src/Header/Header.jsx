@@ -1,6 +1,5 @@
 import "./Header.css"
 import { NavLink } from 'react-router-dom';
-import Logo from "./Logo";
 import NameLogo from "../NameLogo/NameLogo";
 
 

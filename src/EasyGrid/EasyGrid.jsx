@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function EasyGrid({ spacing, minWidth, children }) {
+export default function EasyGrid({ spacing, minWidth, maxWidth, children }) {
   const gridStyle = {
     display: "grid",
-    gridTemplateColumns: `repeat(auto-fit, minmax(${minWidth}px, 1fr))`,
+    gridTemplateColumns: `repeat(auto-fit, minmax(${minWidth}, ${maxWidth}))`,
     padding: `${spacing}px`,
     gap: `${spacing}px`,
   };

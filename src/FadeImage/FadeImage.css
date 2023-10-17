@@ -1,0 +1,82 @@
+body {
+  margin: 0px;
+}
+
+.hover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 270px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  color: silver;
+  text-shadow: 2px 2px 5px black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blur-layer, .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none; /* So that it doesn't interfere with hover/clicks */
+  background: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blur-layer {
+  filter: blur(0);
+  transition: filter 0.3s ease;
+}
+
+.hover-container:hover .blur-layer {
+  filter: blur(8px);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 255, 0);
+  transition: background-color 0.3s ease;
+}
+
+.hover-container:hover .overlay {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+h1 {
+  flex: 1;
+  z-index: 1;
+  width: 90%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.hover-text {
+  width: 90%;  
+  text-align: center;
+  overflow: hidden;
+  visibility: hidden;
+  flex: 1;
+  z-index: 2; /* Elevate above overlay */
+}
+
+.hover-container:hover .hover-text {
+  visibility: visible;
+}
+
+.hover-text p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}

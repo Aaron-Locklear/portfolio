@@ -11,9 +11,9 @@ export default function Header(){
                 firstName="Aaron"
                 lastInitial="L"
                 lastName="Locklear"/>
-    <ul>
+    <ul className="header-list">
       {PAGE_NAMES.map((pageName) => {
-        return( <li key={pageName}><NavLink  to={"/" + pageName} activeclassname="active">{pageName}</NavLink></li> )
+        return( <li key={pageName} className="header-link"><NavLink  to={"/" + pageName} activeclassname="active">{pageName}</NavLink></li> )
       })}
     </ul>
   </nav>)

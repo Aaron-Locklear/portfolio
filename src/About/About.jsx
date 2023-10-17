@@ -19,7 +19,7 @@ export default function About(){
 
     <div className="skills">
       <h1>My Skills</h1>
-      <EasyGrid spacing={20} minWidth={"70px"} maxWidth={"1fr"}>
+      <EasyGrid spacing={10} minWidth={"70px"} maxWidth={"1fr"}>
         <TechIcon label={"HTML"} altText={"HTML Logo"} imgSource={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"}/>
         <TechIcon label={"CSS"} altText={"CSS Logo"} imgSource={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"}/>
         <TechIcon label={"JavaScript"} altText={"JavaScript Logo"} imgSource={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"}/>
@@ -33,6 +33,10 @@ export default function About(){
         <TechIcon label={"Ubuntu"} altText={"Ubuntu Logo"} imgSource={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg"}/>
       </EasyGrid>
     </div>
-    <div className="contact"></div>
+
+    <div className="contact">
+      <h1>Contact Me</h1>
+      <p>aaronblocklear@gmail.com</p>
+    </div>
   </section>
 }

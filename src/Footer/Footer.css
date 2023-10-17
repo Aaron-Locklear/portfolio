@@ -1,0 +1,12 @@
+footer{
+  height:70px;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: -5px 0px 5px #2a3d45;
+}
+
+footer *{
+  height:80%
+}

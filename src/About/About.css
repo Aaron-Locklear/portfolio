@@ -3,12 +3,16 @@
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   overflow-y: scroll;
-  max-width: 100%;
+  width: 100%;
 }
 
 .about-section > div{
   grid-column: 2/3;
   display: flex;
+}
+
+.background{
+  padding: 20px 0px;
 }
 
 .background > img{
@@ -37,12 +41,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: 100%;
+  max-width: 100%;
 }
 
 .grid-container{
-  width: 100%;
+  max-width: 100%;
+}
+
+.contact{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:20px 0px;
 }
 
 @media (max-width:500px){

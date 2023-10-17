@@ -5,6 +5,7 @@ import Home from './Home/Home';
 import Projects from './Projects/Projects';
 import Header from './Header/Header';
 import { useEffect } from 'react';
+import Footer from './Footer/Footer';
 
 function App() {
   const navigate = useNavigate();
@@ -23,6 +24,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Projects" element={<Projects />} />
       </Routes>
+      <Footer/>
     </>
   );
 }

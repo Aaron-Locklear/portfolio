@@ -1,16 +1,25 @@
-import EasyGrid from "../EasyGrid/EasyGrid";
-import FadeImage from "../FadeImage/FadeImage";
-import Header from "../Header/Header";
 import ProjectDemo from "../ProjectDemo/ProjectDemo";
-import TechIcon from "../TechIcons/TechIcon";
+import { projectList } from "./projectsList";
 import "./Projects.css"
 
 export default function Projects(){
-  //<ProjectDemo projectTitle={} projectDescription={} projectImageURL={} projectLivePreviewURL={} projectSourceCodeURL={}/> ** black template for adding more
-  return(<section className="project-section">
-    <ul className="projects-holder">
-    <ProjectDemo projectTitle={"HTML FORM"} projectDescription={"A demonstration of html forms and JavaScript validation"} projectImageURL={"src/assets/SignUpForm.png"} projectLivePreviewURL={"https://aaron-locklear.github.io/signUpForm/"} projectSourceCodeURL={"https://github.com/Aaron-Locklear/signUpForm"}/>
-    </ul>
-  </section>);
+  const projectElements = projectList.map((project, index) => 
+    <ProjectDemo 
+      key={project.title + index}
+      projectTitle={project.title}
+      projectDescription={project.description}
+      projectImageURL={project.imageURL}
+      projectLivePreviewURL={project.livePreviewURL}
+      projectSourceCodeURL={project.sourceCodeURL}
+      className={index % 2 === 1 ? 'reverse' : 'regular'}
+    />
+  );
 
+  return(
+    <section className="project-section">
+      <ul className="projects-holder">
+        {projectElements}
+      </ul>
+    </section>
+  );
 }

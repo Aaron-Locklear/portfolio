@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section className="about-section">
       <div className="background-container">
-        <img className="user-icon" src="src/assets/user.svg" />
+        <img className="user-icon" src="../assets/user.svg" />
         <div className="background-text">
           <h2 className="section-header">BackGround</h2>
           <p className="about-text">

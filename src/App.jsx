@@ -1,10 +1,10 @@
 import './App.css';
-import About from './About/About';
 import { Routes, Route, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import About from './About/About';
 import Home from './Home/Home';
 import Projects from './Projects/Projects';
 import Header from './Header/Header';
-import { useEffect } from 'react';
 import Footer from './Footer/Footer';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Projects" element={<Projects />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 }

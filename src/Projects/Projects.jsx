@@ -1,10 +1,10 @@
-import ProjectDemo from "../ProjectDemo/ProjectDemo";
-import { projectList } from "./projectsList";
-import "./Projects.css"
+import ProjectDemo from '../ProjectDemo/ProjectDemo';
+import { projectList } from './projectsList';
+import './Projects.css';
 
-export default function Projects(){
-  const projectElements = projectList.map((project, index) => 
-    <ProjectDemo 
+export default function Projects() {
+  const projectElements = projectList.map((project, index) => (
+    <ProjectDemo
       key={project.title + index}
       projectTitle={project.title}
       projectDescription={project.description}
@@ -13,13 +13,11 @@ export default function Projects(){
       projectSourceCodeURL={project.sourceCodeURL}
       className={index % 2 === 1 ? 'reverse' : 'regular'}
     />
-  );
+  ));
 
-  return(
+  return (
     <section className="project-section">
-      <ul className="projects-holder">
-        {projectElements}
-      </ul>
+      <ul className="projects-holder">{projectElements}</ul>
     </section>
   );
 }

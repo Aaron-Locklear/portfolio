@@ -1,8 +1,13 @@
-import { useEffect, useState } from "react";
-import "./NameLogo.css";
-import ResetableTypingEffect from "./ResetableTypingEffect.js";
+import { useEffect, useState } from 'react';
+import './NameLogo.css';
+import ResetableTypingEffect from './ResetableTypingEffect.js';
 
-export default function NameLogo({ firstInitial, firstName, lastName, lastInitial }) {
+export default function NameLogo({
+  firstInitial,
+  firstName,
+  lastName,
+  lastInitial,
+}) {
   const [isHovered, setIsHovered] = useState(false);
   const [resetText, setResetText] = useState(false);
 
@@ -23,12 +28,18 @@ export default function NameLogo({ firstInitial, firstName, lastName, lastInitia
   const currentLastNameText = isHovered ? typedLastName : lastInitial;
 
   return (
-    <p className="full-name"
+    <p
+      className="full-name"
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseExit}>
-      <span className="first-name">{window.innerWidth > 680 ? currentFirstNameText : firstInitial}</span>
-      {isHovered && window.innerWidth > 680 ? "\u00A0" : ""}
-      <span className="last-name">{window.innerWidth > 680 ? currentLastNameText : lastInitial}</span>
+      onMouseLeave={handleMouseExit}
+    >
+      <span className="first-name">
+        {window.innerWidth > 680 ? currentFirstNameText : firstInitial}
+      </span>
+      {isHovered && window.innerWidth > 680 ? '\u00A0' : ''}
+      <span className="last-name">
+        {window.innerWidth > 680 ? currentLastNameText : lastInitial}
+      </span>
       .
     </p>
   );

@@ -6,6 +6,7 @@ import Home from './Home/Home';
 import Projects from './Projects/Projects';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import { Helmet } from 'react-helmet';
 
 function App() {
   const navigate = useNavigate();
@@ -13,10 +14,14 @@ function App() {
   useEffect(() => {
     // Redirect to '/Home' when the app starts
     navigate('/Home');
+    document.title = "Aaron Locklear Portfolio";
   }, []);
 
   return (
     <>
+      <Helmet>
+        <meta name="description" content="This portfolio, built with React, emphasizes the use of React Router and modular component design. It showcases my web development skills and design aesthetics in a cohesive presentation." />
+      </Helmet>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

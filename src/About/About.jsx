@@ -9,9 +9,9 @@ export default function About() {
   return (
     <section className="about-section">
       <div className="background-container">
-        <img className="user-icon" src="https://raw.githubusercontent.com/Aaron-Locklear/image-collection/6bf303a02d8e47ab865958577af31ff04218c06a/assets/user.svg" />
+        <img className="user-icon" src="https://github.com/Aaron-Locklear/image-collection/blob/main/SquarePortrait.png?raw=true" />
         <div className="background-text">
-          <h2 className="section-header">BackGround</h2>
+          <h2 className="section-header">Background</h2>
           <p className="about-text">
             &nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

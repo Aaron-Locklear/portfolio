@@ -33,8 +33,10 @@
 }
 
 .user-icon{
-  width: 100px;
+  max-width: 100px;
   margin-bottom: calc(var(--default-margin-space) / 2);
+  border-radius: 50%;
+  border: 2px solid #2a3d45;
 }
 
 .about-text{

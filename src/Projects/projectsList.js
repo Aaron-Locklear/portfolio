@@ -4,7 +4,7 @@ export const projectList = [
     description:
       'This portfolio, built with React, emphasizes the use of React Router and modular component design. It showcases my web development skills and design aesthetics in a cohesive presentation.',
     imageURL: 'https://github.com/Aaron-Locklear/image-collection/blob/main/assets/portfolio.png?raw=true',
-    livePreviewURL: 'https://aaron-locklear.github.io/portfolio/',
+    livePreviewURL: 'https://ornate-phoenix-ca9a6d.netlify.app',
     sourceCodeURL: 'https://github.com/Aaron-Locklear/portfolio',
   },
   {

@@ -1,3 +1,6 @@
+import "src/assets/SignUpForm.png";
+import "src/assets/portfolio.png";
+
 export const projectList = [
   {
     title: 'Portfolio',

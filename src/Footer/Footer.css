@@ -10,3 +10,7 @@ footer{
 footer *{
   height:80%
 }
+
+.footer-link:hover{
+  cursor: pointer;
+}

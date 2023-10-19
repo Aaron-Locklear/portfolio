@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section className="about-section">
       <div className="background-container">
-        <img className="user-icon" src="src/assets/user.svg" />
+        <img className="user-icon" src="https://raw.githubusercontent.com/Aaron-Locklear/image-collection/6bf303a02d8e47ab865958577af31ff04218c06a/assets/user.svg" />
         <div className="background-text">
           <h2 className="section-header">BackGround</h2>
           <p className="about-text">
@@ -86,7 +86,7 @@ export default function About() {
           </EasyGrid>
         </div>
 
-        <LinkButton linkPath="." linkText="Check out my projects" />
+        <LinkButton linkPath="/Projects" linkText="Check out my projects" />
       </div>
 
       <div className="contact-info">

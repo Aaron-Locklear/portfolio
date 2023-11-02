@@ -13,12 +13,9 @@ export default function About() {
         <div className="background-text">
           <h2 className="section-header">Background</h2>
           <p className="about-text">
-            &nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            &nbsp;&nbsp;Hi, I'm Aaron, a self-motivated web developer, student of computer science and doer of jiu-jitsu.
+            I'm passionate about learning new things and challenging myself to sovle problems. I have been programming since I 17
+            years old and and I still have the same enthusiasm for learning now as I did then.
           </p>
           <LinkButton linkPath="." linkText="Check out my resume" />
         </div>
@@ -82,6 +79,16 @@ export default function About() {
               label="Ubuntu"
               altText="Ubuntu Logo"
               imgSource="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg"
+            />
+            <TechIcon
+              label="NodeJS"
+              altText="NodeJS Logo"
+              imgSource="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            />
+            <TechIcon
+              label="MongoDB"
+              altText="MongoDB Logo"
+              imgSource="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
             />
           </EasyGrid>
         </div>

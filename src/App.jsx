@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import About from './About/About';
 import Home from './Home/Home';
@@ -10,12 +10,19 @@ import { Helmet } from 'react-helmet';
 
 function App() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
-    // Redirect to '/Home' when the app starts
-    navigate('/Home');
     document.title = "Aaron Locklear Portfolio";
-  }, []);
+  }, [])
+
+  useEffect(() => {
+    // Check if the current path is '/'
+    if (location.pathname === '/') {
+      // Redirect to '/Home' only if on the root URL
+      navigate('/Home');
+    }
+  }, [location, navigate]);
 
   return (
     <>
@@ -24,7 +31,6 @@ function App() {
       </Helmet>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Projects" element={<Projects />} />

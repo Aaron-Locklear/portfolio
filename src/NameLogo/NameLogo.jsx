@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './NameLogo.css';
-import ResetableTypingEffect from './ResetableTypingEffect.js';
+import useTypingEffect from './useTypingEffect.js'; // Make sure this path is correct
 
 export default function NameLogo({
   firstInitial,
@@ -9,23 +9,22 @@ export default function NameLogo({
   lastInitial,
 }) {
   const [isHovered, setIsHovered] = useState(false);
-  const [resetText, setResetText] = useState(false);
+
+  // Call the useTypingEffect hook with the isHovered state
+  const typedFirstName = useTypingEffect(firstName, 100, isHovered);
+  const typedLastName = useTypingEffect(lastName, 100, isHovered);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
-    setResetText(false);
   };
 
   const handleMouseExit = () => {
     setIsHovered(false);
-    setResetText(true);
   };
 
-  const typedFirstName = ResetableTypingEffect(firstName, 100, resetText);
-  const typedLastName = ResetableTypingEffect(lastName, 100, resetText);
-
-  const currentFirstNameText = isHovered ? typedFirstName : firstInitial;
-  const currentLastNameText = isHovered ? typedLastName : lastInitial;
+  // Determine the text to display based on whether the element is hovered
+  const displayFirstName = isHovered ? typedFirstName : firstInitial;
+  const displayLastName = isHovered ? typedLastName : lastInitial;
 
   return (
     <p
@@ -34,11 +33,11 @@ export default function NameLogo({
       onMouseLeave={handleMouseExit}
     >
       <span className="first-name">
-        {window.innerWidth > 680 ? currentFirstNameText : firstInitial}
+        {window.innerWidth > 680 ? displayFirstName : firstInitial}
       </span>
       {isHovered && window.innerWidth > 680 ? '\u00A0' : ''}
       <span className="last-name">
-        {window.innerWidth > 680 ? currentLastNameText : lastInitial}
+        {window.innerWidth > 680 ? displayLastName : lastInitial}
       </span>
       .
     </p>

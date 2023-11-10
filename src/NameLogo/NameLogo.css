@@ -5,6 +5,7 @@
   font-weight: 800;
   font-size: 2em;
   user-select: none;
+  min-width: 50px;
 }
 
 

@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section className="about-section">
       <div className="background-container">
-        <img className="user-icon" src="https://github.com/Aaron-Locklear/image-collection/blob/main/SquarePortrait.png?raw=true" />
+        <img className="user-icon" src="/SquarePortrait.png" />
         <div className="background-text">
           <h2 className="section-header">Background</h2>
           <p className="about-text">

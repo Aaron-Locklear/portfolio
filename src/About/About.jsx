@@ -17,7 +17,7 @@ export default function About() {
             I'm passionate about learning new things and challenging myself to sovle problems. I have been programming since I 17
             years old and and I still have the same enthusiasm for learning now as I did then.
           </p>
-          <LinkButton linkPath="." linkText="Check out my resume" />
+          <LinkButton href="/aaronLocklearResume.pdf" linkText="Check out my resume"/>
         </div>
       </div>
 
@@ -89,6 +89,11 @@ export default function About() {
               label="MongoDB"
               altText="MongoDB Logo"
               imgSource="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            />
+            <TechIcon
+              label="Express"
+              altText="Express Logo"
+              imgSource="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
             />
           </EasyGrid>
         </div>

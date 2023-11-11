@@ -13,7 +13,7 @@ export default function Home() {
           Hello, I'm
           <span className="name">{` ${typedName}`}</span>
         </p>
-        <p>I'm a front-end developer</p>
+        <p>I'm a full-stack developer</p>
         <LinkButton linkText="Find out more about me!" linkPath="/About" />
       </div>
     </section>

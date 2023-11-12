@@ -7,6 +7,7 @@ import Projects from './Projects/Projects';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import { Helmet } from 'react-helmet';
+import ErrorPage from './ErrorPage/ErrorPage';
 
 function App() {
   const navigate = useNavigate();
@@ -34,6 +35,7 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Projects" element={<Projects />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </>

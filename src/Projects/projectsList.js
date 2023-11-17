@@ -8,11 +8,11 @@ export const projectList = [
     sourceCodeURL: 'https://github.com/Aaron-Locklear/portfolio',
   },
   {
-    title: 'HTML FORM',
-    description: 'A demonstration of html forms and JavaScript validation',
-    imageURL: '/SignUpForm.png',
-    livePreviewURL: 'https://aaron-locklear.github.io/signUpForm/',
-    sourceCodeURL: 'https://github.com/Aaron-Locklear/signUpForm',
+    title: 'Weather App',
+    description: 'This project uses the Open Weather API to show a 5 day forecast for any city given its longitude and latitude. It was built to shocase API calls and asynchronous programming.',
+    imageURL: '/weather-app.png',
+    livePreviewURL: 'https://aaron-locklear.github.io/weather-app/',
+    sourceCodeURL: 'https://github.com/Aaron-Locklear/weather-app',
   },
 ];
 
